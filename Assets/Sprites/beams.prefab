@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212009139456093810}
   - component: {fileID: 50870583120988216}
   - component: {fileID: 114797230513798108}
+  - component: {fileID: 70443130650266794}
   m_Layer: 0
   m_Name: beams
   m_TagString: Untagged
@@ -62,6 +63,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &70443130650266794
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308822940641118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.68, y: 0.57}
+  m_Direction: 0
 --- !u!114 &114797230513798108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90faae2c966eaf643a952b5e8399c11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
 --- !u!212 &212009139456093810
 SpriteRenderer:
   m_ObjectHideFlags: 1

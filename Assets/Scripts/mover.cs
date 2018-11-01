@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mover : MonoBehaviour {
+public class Mover : MonoBehaviour {
 
 
     //Variable Declartations 
+    //this shows up in the unity program
     public float speed;
+
+
+    private Rigidbody2D rBody;
 
 	// Use this for initialization
 	void Start () {
-
-        Rigidbody2D rBody = GetComponent<Rigidbody2D>();
-            rBody.velocity = transform.right * speed; 
+        rBody = GetComponent<Rigidbody2D>();
+        rBody.velocity = transform.right * speed; 
 	}
 	
 }
